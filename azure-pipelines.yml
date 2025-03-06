@@ -36,9 +36,9 @@ steps:
     ALLURE_ENDPOINT: https://testing.testops.cloud/
     ALLURE_PROJECT_ID: 10983
     ALLURE_TOKEN: $(ALLURE_TOKEN)
-    ALLURE_RESULTS: $(ALLURE_RESULTS)
+    ALLURE_RESULTS: "build/allure-results"
     ALLURE_LAUNCH_NAME: "$(Build.DefinitionName)-$(Build.BuildNumber)"
     TEST_BRANCH: $(Build.SourceBranchName)
     ALLURE_LAUNCH_TAGS: "$(Build.SourceBranchName), azure"
-    AZURE_BROWSER: $(AZURE_BROWSER)
+    AZURE_BROWSER: $(AZURE_BROWSER)\\
     AZURE_HOST: $(AZURE_HOST)
